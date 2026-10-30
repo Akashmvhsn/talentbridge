@@ -1,0 +1,15 @@
+{
+  "name": "talentbridge",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Referral job board — Express API serving the React client in production",
+  "scripts": {
+    "build": "npm ci --prefix server --omit=dev && npm ci --prefix client --include=dev && npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
